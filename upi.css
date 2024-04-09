@@ -1,0 +1,71 @@
+body {
+  font-family: 'Coolvetica', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url('tok4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  vertical-align: middle;
+  background: rgba(248,248,248, 0.6) /* Green background with 30% opacity */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.payment-option {
+  flex: 1;
+}
+
+.payment-option input[type="radio"] {
+  display: none;
+}
+
+.payment-option label {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.payment-option input[type="radio"]:checked + label {
+  background-color: #0056b3;
+}
+
+.buy-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+}

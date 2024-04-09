@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electric Vehicle Parts Payment</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('tok6.jpg'); /* Change to your background image */
+      background-size: cover;
+      background-position: center;
+      font-family: 'Coolvetica', sans-serif;
+    }
+    
+    .navbar {
+      background-color: #4B0082; /* Dark purple */
+      color: white;
+      text-align: center;
+      padding: 20px; /* Increased padding */
+      height: 100px; /* Increased height */
+    }
+    
+    .navbar h1 {
+      margin: 0;
+      font-size: 40px; /* Increased font size */
+    }
+    
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      margin-top: 20px; /* Updated margin-top */
+    }
+    
+    h1 {
+      font-size: 28px; /* Increased font size */
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    
+    .payment-options {
+      margin-bottom: 20px;
+    }
+    
+    .payment-option {
+      margin-bottom: 10px;
+    }
+    
+    .payment-option label {
+      font-size: 16px;
+    }
+    
+    .buy-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    
+    .buy-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Electric Vehicle Parts Payment</h1>
+    <a href="home.php">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="feedback.php">Feedback</a>
+    <a href="show_products.php">Buy</a>
+    <a href="index.html">Sell</a>
+    <a href="login.php">Logout</a>
+  </nav>
+  <div class="container">
+    <h1>Choose Your Mode of Payment</h1>
+    <p>Please choose a payment method:</p>
+    
+    <div class="payment-options">
+      <div class="payment-option">
+        <input type="radio" id="Card" name="paymentMethod" checked>
+        <label for="Card"> Card</label>
+      </div>
+      <div class="payment-option">
+        <input type="radio" id="upi" name="paymentMethod">
+        <label for="upi">UPI</label>
+      </div>
+    </div>
+    
+    <button class="buy-button" onclick="redirectToPayment()">Buy Now</button>
+  </div>
+
+  <script>
+    function redirectToPayment() {
+      const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').id;
+      if (paymentMethod === "Card") {
+        window.location.href = "card.html";
+      } else if (paymentMethod === "upi") {
+        window.location.href = "upi.html";
+      }
+    }
+  </script>
+</body>
+</html>

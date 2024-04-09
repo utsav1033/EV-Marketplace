@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us Section</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Coolvetica, sans-serif;
+            background-image: url('tok.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+
+        .navbar {
+            background-color: #4B0082; /* Dark purple */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2{
+            color:#ffffff;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 40px; /* Increased font size */
+            padding: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .heading {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .heading p {
+            font-size: 40px;
+            color: #ffffff; /* White */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .about-box {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; /* Align content vertically */
+            text-align: center; /* Align text center */
+            margin-top: 20px; /* Adjust margin top */
+        }
+
+        .about-image {
+            margin-bottom: 20px;
+        }
+
+        .about-image img {
+            max-width: 50%; /* Increase image size */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .about-content {
+            flex: 1;
+            padding: 0 20px;
+            max-width: 500px;
+        }
+
+        .about-content h2 {
+            font-size: 30px;
+            color: #4B0082; /* Dark purple */
+        }
+
+        .about-content p {
+            font-size: 20px;
+            color: #333333; /* Dark gray */
+        }
+
+        .read-more {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4B0082; /* Dark purple */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .read-more:hover {
+            background-color: #800080; /* Darker purple */
+        }
+        
+        .offline-media {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <h1>About Us</h1>
+        <div class="nav-links">
+            <a href="home.php">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.php">Feedback</a>
+            <a href="show_products.php">Buy</a>
+            <a href="index.html">Sell</a>
+            <a href="login.php">Logout</a>
+
+        </div>
+    </div>
+</nav>
+<div class="heading">
+    <p>Electric vehicles are the future.</p>
+</div>
+
+<div class="container">
+    <!-- Text and Image Box -->
+    <section class="about-box">
+        <div class="about">
+            <div class="about-image">
+                <img src="about2.gif" class="center">
+            </div>
+            <div class="about-content">
+                <h2>Electric parts at your doorsteps</h2>
+                <p>At EV Marketplace, we are passionate about sustainable transportation solutions. Our mission is to make electric vehicles more accessible to everyone by providing a platform for buying and selling used electric vehicle products.
+                    Whether you're looking to upgrade your electric vehicle or find affordable replacement parts, we've got you covered. Our marketplace offers a wide range of used electric vehicle products, including batteries, chargers, motors, and more.
+                    Join us in our journey towards a greener future!</p>
+                <a href="contact.html" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Offline Media Box -->
+    <section class="offline-media">
+        <h2>The Future is EV</h2>
+        <video width="560" height="315" controls>
+            <source src="EV_car.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+</div>
+</body>
+</html>

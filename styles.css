@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Coolvetica, sans-serif;
+}
+
+h1{
+
+    font-size: 40px;
+}
+.navbar {
+    background-color: #4B0082; /* Dark purple */
+    color: white;
+    padding: 10px 0;
+    text-align: center; /* Align navbar content to the center */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-box {
+    background-color: #DDA0DD; /* Light purple */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nav-links {
+    text-align: center; /* Align nav links to the center */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Added styles for form elements */
+form {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #4B0082; /* Dark purple */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #800080; /* Darker purple */
+}

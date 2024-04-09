@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Upload</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coolvetica&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('bg.jpg');">
+    <nav class="navbar">
+        <div class="container">
+            <h1>Sell With Us!!</h1>
+            <div class="nav-links">
+                <a href="home.php">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="feedback.php">Feedback</a>
+                <a href="show_products.php">Buy</a>
+                <a href="index.html">Sell</a>
+                <a href="login.php">Logout</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-box">
+            <h2>Upload Product Description</h2>
+            <!-- <form action="upload1.php" method="post" enctype="multipart/form-data"> -->
+            <form action="upload1.php" method="post">
+                <!-- <label for="image">Image:</label>
+                <input type="file" id="image" name="image" accept="image/*"><br> -->
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" style="font-family: 'Coolvetica', sans-serif;"><br>
+                
+                <label for="name">Image URL:</label>
+                <input type="text" id="link" name="link" style="font-family: 'Coolvetica', sans-serif;"><br>
+
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" style="font-family: 'Coolvetica', sans-serif;"><br>
+
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50" style="font-family: 'Coolvetica', sans-serif;"></textarea><br>
+                
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

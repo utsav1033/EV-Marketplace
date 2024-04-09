@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Dark purple navigation bar */
+.navbar {
+  background-color: rgba(75, 0, 130, 0.8); /* Dark purple */
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar h1,
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Neon blue form container */
+.container {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 255, 0.5); /* Neon blue */
+  background-color: rgba(0, 0, 255, 0.1); /* Neon blue with transparency */
+  margin-top: 60px; /* Adjust margin to accommodate fixed navbar */
+  font-family: 'Poppins', sans-serif;
+  background-image: url('lbg.jpg'); /* Replace 'bg-image.jpg' with your image file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+form h2 {
+  color: #0ff; /* Neon blue */
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.input-group {
+  position: relative;
+  width: 320px;
+  margin: 30px;
+}
+
+.input-group input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  color: #000000;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  letter-spacing: 0.8px;
+  z-index: 9;
+}
+
+.input-group label {
+  position: absolute;
+  color: #070707;
+  left: 0;
+  font-size: 16px;
+  padding: 20px 0 10px;
+  pointer-events: none;
+  letter-spacing: 0.8;
+  transition: 0.5s;
+  font-weight: 500;
+}
+
+.input-group input:valid ~ label,
+.input-group input:focus ~ label {
+  color: #070707;
+  transform: translateX(0) translateY(-34px);
+}
+
+.input-group .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(0, 0, 255, 0.5); /* Neon blue */
+  border-radius: 5px;
+}
+
+.check {
+  display: flex;
+  justify-content: space-between;
+}
+
+.check label,
+.check a {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #030303;
+  cursor: pointer;
+}
+
+.check label {
+  display: flex;
+  align-items: center;
+  color: #070707;
+  position: relative;
+  padding-left: 20px;
+}
+
+.check label input {
+  appearance: none;
+  position: absolute;
+  left: 0;
+}
+
+.check label input::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  width: 15px;
+  border-radius: 4px;
+  background: #14141473;
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.check label input:checked::before {
+  content: "\2714";
+  background: rgba(15, 15, 15, 0.15);
+}
+
+.check a {
+  text-decoration: none;
+}
